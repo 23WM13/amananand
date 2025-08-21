@@ -124,10 +124,11 @@
 
     function setBtnPlaying(btn, playing) {
       if (!btn) return;
-      btn.textContent = playing ? '⏸︎' : '▶︎';
+      btn.textContent = playing ? '⏸︎ Playing' : '▶︎ Podcast';
       btn.setAttribute('aria-label', playing ? 'Pause podcast' : 'Play podcast');
       btn.classList.toggle('is-playing', playing);
     }
+
 
     document.addEventListener('click', function (e) {
       const btn = e.target.closest('.audio-btn');
