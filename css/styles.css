@@ -238,20 +238,19 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  gap: 6px;               /* space between icon and text */
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: 500;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   background: #fff;
-  font-size: 16px;
-  line-height: 1;
   cursor: pointer;
   transition: transform 0.15s, background 0.15s, border-color 0.15s;
-  padding: 0;
 }
 
 .audio-btn:hover {
-  transform: scale(1.06);
+  transform: scale(1.05);
   background: #f7faff;
   border-color: #cfe5ff;
 }
@@ -260,3 +259,4 @@ ul {
   background: #eaf3ff;
   border-color: #a7caff;
 }
+
