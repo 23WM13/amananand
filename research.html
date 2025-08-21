@@ -31,6 +31,12 @@
           <a href="https://github.com/23WM13/Distill--DKP" title="Code"><img src="asset/github.png" alt="Code" class="pub-logo" /></a>
           <a href="https://arxiv.org/abs/2410.14700" title="Paper"><img src="asset/research-paper.png" alt="Paper" class="pub-logo" /></a>
           <a href="https://23wm13.github.io/distill-dkp/" title="Website"><img src="asset/web.png" alt="Website" class="pub-logo" /></a>
+          <!-- NEW: audio play button -->
+            <button class="audio-btn"
+                    aria-label="Play podcast"
+                    data-audio="assets/audio/distill-dkp.mp3">
+              ▶︎
+            </button>
         </div>
       </div>
     </section>
@@ -110,4 +116,57 @@
 
   </main>
 </body>
+<!-- Shared audio element (hidden) -->
+<audio id="pub-audio" preload="none"></audio>
+
+<script>
+  (function () {
+    const player = document.getElementById('pub-audio');
+    let currentBtn = null;
+
+    function setBtnPlaying(btn, playing) {
+      if (!btn) return;
+      btn.textContent = playing ? '⏸︎' : '▶︎';
+      btn.setAttribute('aria-label', playing ? 'Pause podcast' : 'Play podcast');
+      btn.classList.toggle('is-playing', playing);
+    }
+
+    document.addEventListener('click', function (e) {
+      const btn = e.target.closest('.audio-btn');
+      if (!btn) return;
+
+      const src = btn.getAttribute('data-audio');
+      if (!src) return;
+
+      // If clicking the same button currently playing → toggle pause/play
+      if (currentBtn === btn && !player.paused) {
+        player.pause();
+        return;
+      }
+
+      // If switching to a new track, update source
+      if (player.src !== new URL(src, window.location).href) {
+        player.src = src;
+      }
+
+      player.play().catch(console.error);
+      // Update button states
+      if (currentBtn && currentBtn !== btn) setBtnPlaying(currentBtn, false);
+      currentBtn = btn;
+      setBtnPlaying(btn, true);
+    });
+
+    player.addEventListener('play', () => {
+      if (currentBtn) setBtnPlaying(currentBtn, true);
+    });
+    player.addEventListener('pause', () => {
+      if (currentBtn) setBtnPlaying(currentBtn, false);
+    });
+    player.addEventListener('ended', () => {
+      if (currentBtn) setBtnPlaying(currentBtn, false);
+    });
+  })();
+</script>
+
+  
 </html> 
