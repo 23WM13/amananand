@@ -233,3 +233,30 @@ ul {
     margin: 0 0 8px 0;
   }
 } 
+
+.audio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s, border-color 0.15s;
+  padding: 0;
+}
+
+.audio-btn:hover {
+  transform: scale(1.06);
+  background: #f7faff;
+  border-color: #cfe5ff;
+}
+
+.audio-btn.is-playing {
+  background: #eaf3ff;
+  border-color: #a7caff;
+}
