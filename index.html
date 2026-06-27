@@ -4,26 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aman Anand - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="container navbar-content">
       <div class="navbar-left">Aman Anand</div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="navbar-right">
         <a href="#" class="active">Home</a>
         <a href="research.html">Research</a>
-        <a href="#">Thoughts</a>
       </div>
     </div>
   </nav>
+
   <main class="container">
-    <section class="profile-section">
-      <div class="profile-pic">
+    <section class="profile-section fade-in">
+      <div class="profile-pic fade-in-left">
         <img src="asset/profile.png" alt="Profile Picture" />
       </div>
-      <div class="profile-info">
-        <h1> Aman Anand</h1>
+      <div class="profile-info fade-in-right">
+        <h1>Aman Anand</h1>
         <p class="designation">Ph.D. Candidate in Computing | BAM Lab</p>
         <p class="organization">School of Computing | Queen's University | ON, Canada</p>
         <p class="email">aman.anand@queensu.ca</p>
@@ -40,50 +48,107 @@
         </div>
         <hr class="profile-divider">
         <div class="profile-intro">
-          <p>I am currently a second‑year Ph.D. student in the <a href="http://bamlab.ca/">BAM Lab</a> at the <a href="https://www.queensu.ca/">School of Computing, Queen's University</a>, working under the supervision of <a href="https://www.cs.queensu.ca/people/Farhana/Zulkernine">Dr. Farhana Zulkernine</a>. My research focuses on computer vision, with an emphasis on self‑supervised learning and multimodal vision‑language models for human–machine interaction.<br><br>
-            Before beginning my Ph.D., I earned an M.S. in Computer Science from <a href="https://indianastate.edu/">Indiana State University</a>, where I worked on converting handwritten documents to LaTeX using attention‑based models. 
-            I hold a B.Tech. in Computer Science and Engineering from <a href="https://amity.edu/kolkata/">Amity University Kolkata</a>. <br><br>
-            Apart from research, I love to cook, and watch sci-fi movies.
-          </p>
+          <p>I am currently a second-year Ph.D. student in the <a href="http://bamlab.ca/">BAM Lab</a> at the <a href="https://www.queensu.ca/">School of Computing, Queen's University</a>, working under the supervision of <a href="https://www.cs.queensu.ca/people/Farhana/Zulkernine">Dr. Farhana Zulkernine</a>. My research focuses on computer vision, with an emphasis on self-supervised learning and multimodal vision-language models for human-machine interaction.</p>
+          <p>Before beginning my Ph.D., I earned an M.S. in Computer Science from <a href="https://indianastate.edu/">Indiana State University</a>, where I worked on converting handwritten documents to LaTeX using attention-based models. I hold a B.Tech. in Computer Science and Engineering from <a href="https://amity.edu/kolkata/">Amity University Kolkata</a>.</p>
+          <p>Apart from research, I love to cook, and watch sci-fi movies.</p>
         </div>
       </div>
     </section>
-    <section class="news-section">
+
+    <section class="news-section fade-in">
       <h2>News</h2>
-      <ul>
-        <li><b>[Jan, 2026]</b> One paper got accepted in Elsevier's Machine Learning with Applications Journal</li>
-        <li><b>[Jan, 2026]</b>Two papers got published in Transactions on Machine Learning Research (TMLR)</li>
-        <li><b>[Oct, 2025]</b> One paper got accepted at ICTH.</li>
-        <li><b>[July, 2025]</b> Our Distill-DKP paper got accepted at ICMV (18th International Conference on Machine Vision, 2025).</li>
-        <li><b>[April, 2025]</b> Our SDA-GRIN paper got accepted at IEEE COMPSAC.</li>
-        <li><b>[Nov, 2024]</b> Our CoBEV-Fusion paper got accepted at IEEE DICTA Conference.</li>
-        <li><b>[Oct, 2024]</b> Our Yolo-I3D Light paper got accepted in Journal of Imaging.</li>
-        <li><b>[Aug, 2024]</b> Submitted our survey on Multi-Modal Data conversion to ACM Computing Survey.</li>
-        <li><b>[Sept, 2023]</b> Joined Ph.D at School of Computing, Queen's University.</li>
-        <li><b>[May 2023]</b> Graduated M.S in Computer Science from Indiana State University.</li>
-        <li><b>[June, 2022]</b> Our On Edge Deep Learning paper got accepted in Multimedia Tools and Application Journal.</li>
-        <li><b>[Dec, 2021]</b> Our Drone Delivery system paper got accepted in ICTCS 2021.</li>
-        <li><b>[August, 2021]</b> Started M.S in CS at Indiana State University.</li>
-        <li><b>[June, 2021]</b> Graduated with B.Tech in CS and Engineering.</li>
+      <ul class="stagger-children">
+        <li><span class="date-tag">Jan, 2026</span><span class="li-text">One paper got accepted in Elsevier's Machine Learning with Applications Journal</span></li>
+        <li><span class="date-tag">Jan, 2026</span><span class="li-text">Two papers got published in Transactions on Machine Learning Research (TMLR)</span></li>
+        <li><span class="date-tag">Oct, 2025</span><span class="li-text">One paper got accepted at ICTH.</span></li>
+        <li><span class="date-tag">July, 2025</span><span class="li-text">Our Distill-DKP paper got accepted at ICMV (18th International Conference on Machine Vision, 2025).</span></li>
+        <li><span class="date-tag">April, 2025</span><span class="li-text">Our SDA-GRIN paper got accepted at IEEE COMPSAC.</span></li>
+        <li class="news-hidden"><span class="date-tag">Nov, 2024</span><span class="li-text">Our CoBEV-Fusion paper got accepted at IEEE DICTA Conference.</span></li>
+        <li class="news-hidden"><span class="date-tag">Oct, 2024</span><span class="li-text">Our Yolo-I3D Light paper got accepted in Journal of Imaging.</span></li>
+        <li class="news-hidden"><span class="date-tag">Aug, 2024</span><span class="li-text">Submitted our survey on Multi-Modal Data conversion to ACM Computing Survey.</span></li>
+        <li class="news-hidden"><span class="date-tag">Sept, 2023</span><span class="li-text">Joined Ph.D at School of Computing, Queen's University.</span></li>
+        <li class="news-hidden"><span class="date-tag">May, 2023</span><span class="li-text">Graduated M.S in Computer Science from Indiana State University.</span></li>
+        <li class="news-hidden"><span class="date-tag">June, 2022</span><span class="li-text">Our On Edge Deep Learning paper got accepted in Multimedia Tools and Application Journal.</span></li>
+        <li class="news-hidden"><span class="date-tag">Dec, 2021</span><span class="li-text">Our Drone Delivery system paper got accepted in ICTCS 2021.</span></li>
+        <li class="news-hidden"><span class="date-tag">Aug, 2021</span><span class="li-text">Started M.S in CS at Indiana State University.</span></li>
+        <li class="news-hidden"><span class="date-tag">June, 2021</span><span class="li-text">Graduated with B.Tech in CS and Engineering.</span></li>
       </ul>
+      <button class="show-more-btn" onclick="toggleNews(this)">
+        Show More <span class="arrow">&#9660;</span>
+      </button>
     </section>
-    <section class="employment-section">
+
+    <section class="employment-section fade-in">
       <h2>Employment</h2>
       <ul>
-        <li><b>[Oct, 2025 - Present]</b> Research Intern @ GEMINI, Unity Health Toronto. | Applied and learned Skill: RAG, LLMs</li>
-        <li><b>[May, 2024 - Present]</b> Health Informatics Dashboard Lead at Department of Pathology (Queen's) | Gemini Hospital</li>
-        <li><b>[Sept, 2024 - Present]</b> Graduate Teaching Assistant at Queen's University</li>
-        <li><b>[Oct, 2023 - April, 2024]</b> IT Technical Writer in IT Service department at Queen's University</li>
-        <li><b>[Jan, 2022 - May, 2023]</b> Graduate Teaching Assistant at Indiana State University</li>
-        <li><b>[April, 2020 - June, 2020]</b> Web Developer Intern at Sikharthy Infotech </li>
+        <li><span class="date-tag">Oct, 2025 - Present</span><span class="li-text">Research Intern @ GEMINI, Unity Health Toronto | Applied and learned Skill: RAG, LLMs</span></li>
+        <li><span class="date-tag">May, 2024 - Present</span><span class="li-text">Health Informatics Dashboard Lead at Department of Pathology (Queen's) | Gemini Hospital</span></li>
+        <li><span class="date-tag">Sept, 2024 - Present</span><span class="li-text">Graduate Teaching Assistant at Queen's University</span></li>
+        <li><span class="date-tag">Oct, 2023 - Apr, 2024</span><span class="li-text">IT Technical Writer in IT Service department at Queen's University</span></li>
+        <li><span class="date-tag">Jan, 2022 - May, 2023</span><span class="li-text">Graduate Teaching Assistant at Indiana State University</span></li>
+        <li><span class="date-tag">Apr, 2020 - June, 2020</span><span class="li-text">Web Developer Intern at Sikharthy Infotech</span></li>
       </ul>
     </section>
-    <section class="review-section">
+
+    <section class="review-section fade-in">
       <h2>Reviewing</h2>
       <ul>
-        <li><b>[Journals]</b>  IEEE Transactions on Multimedia, IEEE Sensor, European Journal of Artificial Intelligence (EJAI)</li>
+        <li><span class="date-tag">Journals</span><span class="li-text">IEEE Transactions on Multimedia, IEEE Sensor, European Journal of Artificial Intelligence (EJAI)</span></li>
       </ul>
     </section>
   </main>
+
+  <footer class="footer fade-in">
+    &copy; 2026 Aman Anand
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      this.classList.toggle('open');
+      document.querySelector('.navbar-right').classList.toggle('open');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.navbar-right a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.querySelector('.menu-toggle').classList.remove('open');
+        document.querySelector('.navbar-right').classList.remove('open');
+      });
+    });
+
+    // Scroll animations
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(function (el) {
+      observer.observe(el);
+    });
+
+    // News show more / show less
+    function toggleNews(btn) {
+      var items = document.querySelectorAll('.news-section ul li.news-hidden, .news-section ul li.news-revealed');
+      var expanded = btn.classList.toggle('expanded');
+
+      items.forEach(function (item) {
+        if (expanded) {
+          item.classList.remove('news-hidden');
+          item.classList.add('news-revealed');
+        } else {
+          item.classList.add('news-hidden');
+          item.classList.remove('news-revealed');
+        }
+      });
+
+      btn.innerHTML = expanded
+        ? 'Show Less <span class="arrow">&#9660;</span>'
+        : 'Show More <span class="arrow">&#9660;</span>';
+    }
+  </script>
 </body>
-</html> 
+</html>

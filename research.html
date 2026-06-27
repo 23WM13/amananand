@@ -4,25 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aman Anand - Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="container navbar-content">
       <div class="navbar-left">Aman Anand</div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="navbar-right">
         <a href="index.html">Home</a>
         <a href="research.html" class="active">Research</a>
-        <a href="#">Thoughts</a>
       </div>
     </div>
   </nav>
-  <main class="container">
-    <h2>Publications</h2>
 
-    <section class="publication-section">
+  <main class="container">
+    <h2 class="fade-in">Publications</h2>
+
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/asma.png" alt="Model Architecture" />
+        <img src="asset/asma.png" alt="ASMa Architecture" />
       </div>
       <div class="publication-info">
         <h3>ASMa: Asymmetric Spatio-temporal Masking for Skeleton Action Representation Learning</h3>
@@ -32,17 +40,14 @@
           <a href="https://github.com/23WM13/ASMa" title="Code"><img src="asset/github.png" alt="Code" class="pub-logo" /></a>
           <a href="https://openreview.net/pdf?id=kIFo1q3VMS" title="Paper"><img src="asset/research-paper.png" alt="Paper" class="pub-logo" /></a>
           <a href="https://23wm13.github.io/ASMa/" title="Website"><img src="asset/web.png" alt="Website" class="pub-logo" /></a>
-          <!-- NEW: audio play button -->
-            <button class="audio-btn"
-                    aria-label="Play podcast"
-                    data-audio="asset/audio/asma.mp3">▶︎ Podcast</button>
+          <button class="audio-btn" aria-label="Play podcast" data-audio="asset/audio/asma.mp3">&#9654;&#65038; Podcast</button>
         </div>
       </div>
     </section>
-    
-    <section class="publication-section">
+
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/infgrand.png" alt="Model Architecture" />
+        <img src="asset/infgrand.png" alt="InfGraND Architecture" />
       </div>
       <div class="publication-info">
         <h3>InfGraND: An Influence-Guided GNN-to-MLP Knowledge Distillation</h3>
@@ -52,17 +57,14 @@
           <a href="https://github.com/AmEskandari/InfGraND" title="Code"><img src="asset/github.png" alt="Code" class="pub-logo" /></a>
           <a href="https://openreview.net/pdf?id=lfzHR3YwlD" title="Paper"><img src="asset/research-paper.png" alt="Paper" class="pub-logo" /></a>
           <a href="https://ameskandari.github.io/blog-main/posts/infgrand/" title="Website"><img src="asset/web.png" alt="Website" class="pub-logo" /></a>
-          <!-- NEW: audio play button -->
-            <button class="audio-btn"
-                    aria-label="Play podcast"
-                    data-audio="asset/audio/infgrand.mp3">▶︎ Podcast</button>
+          <button class="audio-btn" aria-label="Play podcast" data-audio="asset/audio/infgrand.mp3">&#9654;&#65038; Podcast</button>
         </div>
       </div>
     </section>
-    
-    <section class="publication-section">
+
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/distill-dkp.png" alt="Model Architecture" />
+        <img src="asset/distill-dkp.png" alt="Distill-DKP Architecture" />
       </div>
       <div class="publication-info">
         <h3>Depth-Guided Self-Supervised Human Keypoint Detection via Cross-Modal Distillation</h3>
@@ -72,17 +74,14 @@
           <a href="https://github.com/23WM13/Distill--DKP" title="Code"><img src="asset/github.png" alt="Code" class="pub-logo" /></a>
           <a href="https://arxiv.org/abs/2410.14700" title="Paper"><img src="asset/research-paper.png" alt="Paper" class="pub-logo" /></a>
           <a href="https://23wm13.github.io/distill-dkp/" title="Website"><img src="asset/web.png" alt="Website" class="pub-logo" /></a>
-          <!-- NEW: audio play button -->
-            <button class="audio-btn"
-                    aria-label="Play podcast"
-                    data-audio="asset/audio/distill-dkp.mp3">▶︎ Podcast</button>
+          <button class="audio-btn" aria-label="Play podcast" data-audio="asset/audio/distill-dkp.mp3">&#9654;&#65038; Podcast</button>
         </div>
       </div>
     </section>
 
-    <section class="publication-section">
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/sda-grin.png" alt="Model Architecture" />
+        <img src="asset/sda-grin.png" alt="SDA-GRIN Architecture" />
       </div>
       <div class="publication-info">
         <h3>SDA-GRIN for Adaptive Spatial-Temporal Multivariate Time Series Imputation</h3>
@@ -92,17 +91,14 @@
           <a href="https://github.com/AmEskandari/sdagrin" title="Code"><img src="asset/github.png" alt="Code" class="pub-logo" /></a>
           <a href="https://arxiv.org/abs/2410.03954" title="Paper"><img src="asset/research-paper.png" alt="Paper" class="pub-logo" /></a>
           <a href="https://ameskandari.github.io/sda-grin/" title="Website"><img src="asset/web.png" alt="Website" class="pub-logo" /></a>
-          <!-- NEW: audio play button -->
-            <button class="audio-btn"
-                    aria-label="Play podcast"
-                    data-audio="asset/audio/sda-grin.mp3">▶︎ Podcast</button>
+          <button class="audio-btn" aria-label="Play podcast" data-audio="asset/audio/sda-grin.mp3">&#9654;&#65038; Podcast</button>
         </div>
       </div>
     </section>
 
-    <section class="publication-section">
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/yolo.png" alt="Model Architecture" />
+        <img src="asset/yolo.png" alt="YOLO-I3D Architecture" />
       </div>
       <div class="publication-info">
         <h3>YOLO-I3D: Optimizing Inflated 3D Models for Real-Time Human Activity Recognition</h3>
@@ -111,16 +107,14 @@
         <div class="pub-links">
           <a href="https://github.com/Ruikang07/YOLO-I3D_Light" title="Code"><img src="asset/github.png" alt="Code" class="pub-logo" /></a>
           <a href="https://www.mdpi.com/2313-433X/10/11/269" title="Paper"><img src="asset/research-paper.png" alt="Paper" class="pub-logo" /></a>
-          <button class="audio-btn"
-                    aria-label="Play podcast"
-                    data-audio="asset/audio/yolo-i3d.mp3">▶︎ Podcast</button>
+          <button class="audio-btn" aria-label="Play podcast" data-audio="asset/audio/yolo-i3d.mp3">&#9654;&#65038; Podcast</button>
         </div>
       </div>
     </section>
 
-    <section class="publication-section">
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/survey-transformer.png" alt="Model Architecture" />
+        <img src="asset/survey-transformer.png" alt="Survey Architecture" />
       </div>
       <div class="publication-info">
         <h3>Survey: Transformer-based Models in Data Modality Conversion</h3>
@@ -132,9 +126,9 @@
       </div>
     </section>
 
-    <section class="publication-section">
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/cobev.png" alt="Model Architecture" />
+        <img src="asset/cobev.png" alt="CoBEVFusion Architecture" />
       </div>
       <div class="publication-info">
         <h3>CoBEVFusion: Cooperative Perception with LiDAR-Camera Bird's Eye View Fusion</h3>
@@ -146,9 +140,9 @@
       </div>
     </section>
 
-    <section class="publication-section">
+    <section class="publication-section fade-in">
       <div class="publication-image">
-        <img src="asset/on_edge.png" alt="Model Architecture" />
+        <img src="asset/on_edge.png" alt="On Edge Architecture" />
       </div>
       <div class="publication-info">
         <h3>On edge deep learning implementation: approach to achieve 5G</h3>
@@ -159,61 +153,79 @@
         </div>
       </div>
     </section>
-
   </main>
+
+  <footer class="footer fade-in">
+    &copy; 2026 Aman Anand
+  </footer>
+
+  <audio id="pub-audio" preload="none"></audio>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      this.classList.toggle('open');
+      document.querySelector('.navbar-right').classList.toggle('open');
+    });
+
+    document.querySelectorAll('.navbar-right a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.querySelector('.menu-toggle').classList.remove('open');
+        document.querySelector('.navbar-right').classList.remove('open');
+      });
+    });
+
+    // Scroll animations
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(function (el) {
+      observer.observe(el);
+    });
+
+    // Audio player
+    (function () {
+      var player = document.getElementById('pub-audio');
+      var currentBtn = null;
+
+      function setBtnPlaying(btn, playing) {
+        if (!btn) return;
+        btn.textContent = playing ? '⏸︎ Playing' : '▶︎ Podcast';
+        btn.setAttribute('aria-label', playing ? 'Pause podcast' : 'Play podcast');
+        btn.classList.toggle('is-playing', playing);
+      }
+
+      document.addEventListener('click', function (e) {
+        var btn = e.target.closest('.audio-btn');
+        if (!btn) return;
+
+        var src = btn.getAttribute('data-audio');
+        if (!src) return;
+
+        if (currentBtn === btn && !player.paused) {
+          player.pause();
+          return;
+        }
+
+        if (player.src !== new URL(src, window.location).href) {
+          player.src = src;
+        }
+
+        player.play().catch(console.error);
+        if (currentBtn && currentBtn !== btn) setBtnPlaying(currentBtn, false);
+        currentBtn = btn;
+        setBtnPlaying(btn, true);
+      });
+
+      player.addEventListener('play', function () { if (currentBtn) setBtnPlaying(currentBtn, true); });
+      player.addEventListener('pause', function () { if (currentBtn) setBtnPlaying(currentBtn, false); });
+      player.addEventListener('ended', function () { if (currentBtn) setBtnPlaying(currentBtn, false); });
+    })();
+  </script>
 </body>
-<!-- Shared audio element (hidden) -->
-<audio id="pub-audio" preload="none"></audio>
-
-<script>
-  (function () {
-    const player = document.getElementById('pub-audio');
-    let currentBtn = null;
-
-    function setBtnPlaying(btn, playing) {
-      if (!btn) return;
-      btn.textContent = playing ? '⏸︎ Playing' : '▶︎ Podcast';
-      btn.setAttribute('aria-label', playing ? 'Pause podcast' : 'Play podcast');
-      btn.classList.toggle('is-playing', playing);
-    }
-
-
-    document.addEventListener('click', function (e) {
-      const btn = e.target.closest('.audio-btn');
-      if (!btn) return;
-
-      const src = btn.getAttribute('data-audio');
-      if (!src) return;
-
-      // If clicking the same button currently playing → toggle pause/play
-      if (currentBtn === btn && !player.paused) {
-        player.pause();
-        return;
-      }
-
-      // If switching to a new track, update source
-      if (player.src !== new URL(src, window.location).href) {
-        player.src = src;
-      }
-
-      player.play().catch(console.error);
-      // Update button states
-      if (currentBtn && currentBtn !== btn) setBtnPlaying(currentBtn, false);
-      currentBtn = btn;
-      setBtnPlaying(btn, true);
-    });
-
-    player.addEventListener('play', () => {
-      if (currentBtn) setBtnPlaying(currentBtn, true);
-    });
-    player.addEventListener('pause', () => {
-      if (currentBtn) setBtnPlaying(currentBtn, false);
-    });
-    player.addEventListener('ended', () => {
-      if (currentBtn) setBtnPlaying(currentBtn, false);
-    });
-  })();
-</script>
-
-  
-</html> 
+</html>
